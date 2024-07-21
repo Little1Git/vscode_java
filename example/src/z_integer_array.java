@@ -1,9 +1,8 @@
 package example.src;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class z_test { // 只能有一个public class
+public class z_integer_array { // 只能有一个public class
     public static void main(String[] args) {
         int a = 10;
         func_(a);
@@ -16,6 +15,11 @@ public class z_test { // 只能有一个public class
         int[] array = { 1, 2, 3 };
         func_(array);
         System.out.println(Arrays.toString(array));
+        for (int i : array)
+            i = i * 2;
+        for (int i : array)
+            System.out.print(i+"  ");
+        System.out.println();
 
         Data data = new Data(10);
         func_(data);
@@ -28,16 +32,6 @@ public class z_test { // 只能有一个public class
         c += 9999;
         System.out.println(d == c);
         System.out.println(d.equals(c));
-
-        ArrayList<String> list = new ArrayList<>();
-        list.add("A");
-        list.add("B");
-        list.remove(0);
-        try {
-            System.out.println(list.get(0));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
     }
 
     public static void func_(int i) {
