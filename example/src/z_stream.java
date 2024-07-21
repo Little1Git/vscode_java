@@ -30,7 +30,9 @@ public class z_stream {
         // 中间操作是无状态的：例如，filter、map等中间操作在每个元素上独立执行，不会引起线程安全问题。
         // ForkJoinPool是Java 7引入的一个强大的并行处理框架, 将大任务分割成更小的子任务，然后并行处理这些子任务，最后将结果合并。
         // 不适合I/O密集型任务。
-        
+
+        // Collections.synchronizedList  会在内部使用同步锁，以确保线程安全。
+
 
         List<Integer> list3 = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> result3 = Collections.synchronizedList(new ArrayList<>());
