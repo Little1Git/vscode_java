@@ -32,6 +32,7 @@ public class z_stream {
         // 不适合I/O密集型任务。
 
         // Collections.synchronizedList  会在内部使用同步锁，以确保线程安全。
+        // 锁竞争：在高并发环境中，如果多个线程频繁访问或修改同步集合，会导致锁竞争，从而降低性能。
 
 
         List<Integer> list3 = Arrays.asList(1, 2, 3, 4, 5);
