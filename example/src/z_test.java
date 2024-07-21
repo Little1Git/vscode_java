@@ -3,7 +3,7 @@ package example.src;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class test { // 只能有一个public class
+public class z_test { // 只能有一个public class
     public static void main(String[] args) {
         int a = 10;
         func_(a);

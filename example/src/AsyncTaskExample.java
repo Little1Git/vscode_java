@@ -34,7 +34,6 @@ public class AsyncTaskExample {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
-
         System.out.println("All tasks finished.");
     }
 }

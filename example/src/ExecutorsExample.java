@@ -34,7 +34,6 @@ public class ExecutorsExample {
         } catch (InterruptedException e) {
             executor.shutdownNow();
         }
-
         System.out.println("All tasks finished.");
     }
 }
