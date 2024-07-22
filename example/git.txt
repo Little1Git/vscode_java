@@ -10,3 +10,5 @@ git status
 git add .
 git commit -m "Update"
 git push -u origin master
+
+git clone https://github.com/Little1Git/vscode_java.git
