@@ -8,15 +8,15 @@ import java.util.concurrent.TimeUnit;
 
 public class Runnable_Exe {
     public static void main(String[] args) {
-        ArrayList<String> istock_List = new ArrayList<>();
+        ArrayList<String> array_List = new ArrayList<>();
         for (int i = 0; i < 10000000; i++) {
-            istock_List.add("Element " + i);
+            array_List.add("Element " + i);
         }
 
         ExecutorService executorService = Executors.newFixedThreadPool(6);
-        
+
         Runnable task = () -> {
-            HashMap<String, Integer> result = processList(istock_List);
+            HashMap<String, Integer> result = Map_from_List(array_List);
             System.out.println("Finish");
         };
 
@@ -33,7 +33,7 @@ public class Runnable_Exe {
         }
     }
 
-    public static HashMap<String, Integer> processList(ArrayList<String> istock_List) {
+    public static HashMap<String, Integer> Map_from_List(ArrayList<String> istock_List) {
         HashMap<String, Integer> iStockSumm = new HashMap<>();
         for (String obj : istock_List) {
             if (!iStockSumm.containsKey(obj)) {
@@ -43,5 +43,6 @@ public class Runnable_Exe {
         }
         return iStockSumm;
     }
-    
+
 }
+

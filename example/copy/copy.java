@@ -42,3 +42,14 @@ java.util.Optional.ofNullable(this.__fa_List)
 
 .collect(java.util.stream.Collectors.toList())
 // 将映射后的流结果收集并转换回一个列表。
+
+
+
+// public java.util.List<IMendixObject> executeAction() throws Exception
+// {
+// 	this.smt_List = java.util.Optional.ofNullable(this.__smt_List)//20w
+// 		.orElse(java.util.Collections.emptyList())
+// 		.stream()
+// 		.map(__smt_ListElement -> myfirstmodule.proxies.api_model.initialize(getContext(), __smt_ListElement))
+// 		.collect(java.util.stream.Collectors.toList());
+// }
