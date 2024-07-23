@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 // Stream流以一种更加简洁、可读性更强的方式来处理数据。
-public class z_stream {
+public class example1_stream {
         public static void main(String[] args) {
                 List<String> list = Arrays.asList("apple", "banana", "cherry");
                 List<String> result = list.stream()
@@ -40,7 +40,7 @@ public class z_stream {
                 // 如果在流操作中使用了共享的可变状态，可能会引发线程安全问题。
                 // 使用线程安全的集合
                 List<Integer> list3 = Arrays.asList(1, 2, 3, 4, 5);
-                List<Integer> result3 = Collections.synchronizedList(new ArrayList<>());
+                List<Integer> result3 = Collections.synchronizedList(new ArrayList<>());// List<T>
                 list3.parallelStream().forEach(result3::add); 
         }
 

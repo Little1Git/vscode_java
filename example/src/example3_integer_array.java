@@ -2,7 +2,7 @@ package example.src;
 
 import java.util.Arrays;
 
-public class z_integer_array { // 只能有一个public class
+public class example3_integer_array { // 只能有一个public class
     public static void main(String[] args) {
         int a = 10;
         func_(a);
@@ -18,7 +18,7 @@ public class z_integer_array { // 只能有一个public class
         for (int i : array)
             i = i * 2;
         for (int i : array)
-            System.out.print(i+"  ");
+            System.out.print(i + "  ");
         System.out.println();
 
         Data data = new Data(10);
@@ -32,6 +32,9 @@ public class z_integer_array { // 只能有一个public class
         c += 9999;
         System.out.println(d == c);
         System.out.println(d.equals(c));
+        int f = 9999;
+        int g = 9999;
+        System.out.println(g == f);
     }
 
     public static void func_(int i) {

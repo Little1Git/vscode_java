@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class z_arraylist {
+public class example2_arraylist {
     public static void main(String[] args) {
         ArrayList<String> list_1 = new ArrayList<>();
         list_1.add("A");
